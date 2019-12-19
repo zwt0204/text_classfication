@@ -92,6 +92,8 @@ class Moldel_Class:
             # self.cost_func = tf.reduce_mean(
             #     tf.nn.sigmoid_cross_entropy_with_logits(labels=self.outputs, logits=self.logits))
             # 类别独立且排斥，一句话只能属于一个类别
+
+            # self.outputs = self.label_smoothing(self.outputs)
             self.cost_func = tf.reduce_mean(
                 tf.nn.softmax_cross_entropy_with_logits(labels=self.outputs, logits=self.logits))
             self.accuracy = tf.reduce_mean(
@@ -116,3 +118,28 @@ class Moldel_Class:
         """
         step = tf.cast(global_step + 1, dtype=tf.float32)
         return learning_rate * warm_steps ** 0.5 * tf.minimum(step * warm_steps ** -1.5, step ** -0.5)
+
+    def label_smoothing(self, inputs, epsilon=0.1):
+        """
+        import tensorflow as tf
+    inputs = tf.convert_to_tensor([[[0, 0, 1], [0, 1, 0], [1, 0, 0]], [[1, 0, 0], [1, 0, 0], [0, 1, 0]]], tf.float32)
+
+    outputs = label_smoothing(inputs)
+
+    with tf.Session() as sess:
+        print(sess.run([outputs]))
+
+    >>
+    [array([[[ 0.03333334,  0.03333334,  0.93333334],
+        [ 0.03333334,  0.93333334,  0.03333334],
+        [ 0.93333334,  0.03333334,  0.03333334]],
+
+        [[ 0.93333334,  0.03333334,  0.03333334],
+        [ 0.93333334,  0.03333334,  0.03333334],
+        [ 0.03333334,  0.93333334,  0.03333334]]], dtype=float32)]
+        :param inputs:
+        :param epsilon:
+        :return:
+        """
+        K = inputs.get_shape().as_list()[-1]
+        return ((1 - epsilon) * inputs) + (epsilon / K)
