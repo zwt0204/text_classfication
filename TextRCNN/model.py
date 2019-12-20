@@ -72,7 +72,9 @@ class Model_Class:
         with tf.name_scope('context'):
             # 获取左右两边上下文嵌入
             shape = [tf.shape(self.output_fw)[0], 1, tf.shape(self.output_fw)[2]]
+            # 左边去掉最后一个维度
             self.c_left = tf.concat([tf.zeros(shape), self.output_fw[:, :-1]], axis=1, name='context_left')
+            # 右边去掉第一个维度
             self.c_right = tf.concat([self.output_bw[:, 1:], tf.zeros(shape)], axis=1, name='context_right')
 
         # word representation

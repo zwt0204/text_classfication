@@ -10,7 +10,7 @@ import tensorflow as tf
 from al_bert import modeling
 
 
-class TextConfig():
+class TextConfig:
     seq_length = 128  # max length of sentence
     num_labels = 10  # number of labels
 

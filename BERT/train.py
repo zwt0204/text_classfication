@@ -118,14 +118,11 @@ def train():
                     saver.save(session, save_path)
                     best_acc = merged_acc
                     last_improved = global_step
-                    improved_str = '*'
-                else:
-                    improved_str = ''
                 tf.logging.info(
                     "step: {},train loss: {:.3f}, train accuracy: {:.3f}, val loss: {:.3f}, "
-                    "val accuracy: {:.3f},training speed: {:.3f}sec/batch {}".format(
+                    "val accuracy: {:.3f},training speed: {:.3f}sec".format(
                         global_step, train_loss, train_accuracy, val_loss, val_accuracy,
-                        (end - start) / config.print_per_batch, improved_str))
+                        (end - start) / config.print_per_batch))
                 start = time.time()
 
             if global_step - last_improved > config.require_improvement:
