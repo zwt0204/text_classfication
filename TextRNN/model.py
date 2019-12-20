@@ -40,7 +40,7 @@ class Moldel_Class:
             self.outputs = tf.placeholder(tf.float32, [None, self.num_classes], name="outputs")
         self.create_embedding()
         self.create_model()
-        if self.is_training == True:
+        if self.is_training is True:
             self.create_loss()
 
     def load_dict(self):
