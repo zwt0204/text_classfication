@@ -18,4 +18,6 @@
 ## TransformerXL
 - data:{"text":"data", "id":1}
 
+## BERT
+- data: https://github.com/cjymz886/text_bert_cnn
 
