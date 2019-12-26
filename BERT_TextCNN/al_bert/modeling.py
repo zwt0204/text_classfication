@@ -26,7 +26,7 @@ import re
 import numpy as np
 import six
 import tensorflow as tf
-from zwt.NER.albert_ner.al_bert import bert_utils
+from BERT_TextCNN.al_bert import bert_utils
 
 
 class BertConfig(object):

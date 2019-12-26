@@ -10,7 +10,7 @@ import collections
 import codecs
 import os
 import tensorflow as tf
-from al_bert import tokenization
+from BERT_TextCNN.al_bert import tokenization
 import numpy as np
 
 
