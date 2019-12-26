@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c8060b9-26b5-4630-9b88-d3d496b36f68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BERT_TextRNN/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BERT_TextRNN/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/text_classfication.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/text_classfication.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/al_bert/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/al_bert/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/al_bert/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/al_bert/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/al_bert/bert_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/al_bert/bert_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/al_bert/create_pretrain_data.sh" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/al_bert/create_pretrain_data.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/al_bert/create_pretraining_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/al_bert/create_pretraining_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/al_bert/modeling.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/al_bert/modeling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/al_bert/optimization.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/al_bert/optimization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/al_bert/optimization_finetuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/al_bert/optimization_finetuning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/al_bert/python3" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/al_bert/python3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/al_bert/run_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/al_bert/run_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/al_bert/run_pretraining.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/al_bert/run_pretraining.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/al_bert/test_changes.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/al_bert/test_changes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/al_bert/tokenization.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/al_bert/tokenization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/data_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/data_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/train.py" afterDir="false" />
-    </list>
+    <list default="true" id="6c8060b9-26b5-4630-9b88-d3d496b36f68" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +13,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BERT_TextRNN/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="158" column="50" selection-start-line="158" selection-start-column="50" selection-end-line="158" selection-end-column="50" />
+            <state relative-caret-position="566">
+              <caret line="177" column="61" lean-forward="true" selection-start-line="177" selection-start-column="61" selection-end-line="177" selection-end-column="61" />
               <folding>
                 <element signature="e#126#136#0" expanded="true" />
               </folding>
@@ -46,11 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BERT_TextRNN/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="40" column="71" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
-              <folding>
-                <element signature="e#126#149#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="296">
+              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -70,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BERT_TextCNN/data_process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2257">
-              <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+            <state relative-caret-position="2035">
+              <caret line="157" column="78" lean-forward="true" selection-start-line="157" selection-start-column="78" selection-end-line="157" selection-end-column="78" />
               <folding>
                 <element signature="e#133#151#0" expanded="true" />
               </folding>
@@ -132,20 +108,20 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/BERT/al_bert/run_classifier.py" />
         <option value="$PROJECT_DIR$/BERT/data_process.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/BERT/model.py" />
         <option value="$PROJECT_DIR$/BERT/train.py" />
         <option value="$PROJECT_DIR$/TextRCNN/model.py" />
         <option value="$PROJECT_DIR$/BERT_TextCNN/al_bert/modeling.py" />
         <option value="$PROJECT_DIR$/BERT_TextCNN/data_process.py" />
         <option value="$PROJECT_DIR$/BERT_TextRNN/model.py" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/BERT_TextRNN/train.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-2568" />
+    <option name="y" value="5" />
     <option name="width" value="2576" />
     <option name="height" value="1416" />
   </component>
@@ -169,12 +145,7 @@
             <path>
               <item name="text_classfication" type="b2602c69:ProjectViewProjectNode" />
               <item name="text_classfication" type="462c0819:PsiDirectoryNode" />
-              <item name="BERT_TextRNN" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="text_classfication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="text_classfication" type="462c0819:PsiDirectoryNode" />
-              <item name="TextRNN" type="462c0819:PsiDirectoryNode" />
+              <item name="XGBOOST" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -220,7 +191,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="-2568" y="5" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.114115305" />
@@ -314,16 +285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XGBOOST/xgboost_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3364">
-          <caret line="141" column="48" selection-start-line="141" selection-start-column="48" selection-end-line="141" selection-end-column="48" />
-          <folding>
-            <element signature="e#239#252#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SVM/svm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
@@ -402,18 +363,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="777">
-            <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TextRCNN/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -474,30 +423,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BERT_TextRNN/model.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="814">
+            <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XGBOOST/xgboost_.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="40" column="71" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
-          <folding>
-            <element signature="e#126#149#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-803">
+          <caret line="141" column="48" selection-start-line="141" selection-start-column="48" selection-end-line="141" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BERT_TextRNN/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="158" column="50" selection-start-line="158" selection-start-column="50" selection-end-line="158" selection-end-column="50" />
+        <state relative-caret-position="566">
+          <caret line="177" column="61" lean-forward="true" selection-start-line="177" selection-start-column="61" selection-end-line="177" selection-end-column="61" />
           <folding>
             <element signature="e#126#136#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BERT_TextRNN/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BERT_TextCNN/data_process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2257">
-          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+        <state relative-caret-position="2035">
+          <caret line="157" column="78" lean-forward="true" selection-start-line="157" selection-start-column="78" selection-end-line="157" selection-end-column="78" />
           <folding>
             <element signature="e#133#151#0" expanded="true" />
           </folding>

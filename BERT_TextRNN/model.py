@@ -52,15 +52,15 @@ class Moldel_Class:
                                                    initializer=xavier_initializer())
             self.bias_variable = tf.get_variable("classification_bias_variable", shape=[self.num_classes])
 
-            with tf.name_scope('bert'):
-                bert_model = modeling.BertModel(
-                    config=self.bert_config,
-                    is_training=self.is_training,
-                    input_ids=self.input_ids,
-                    input_mask=self.input_mask,
-                    token_type_ids=self.segment_ids,
-                    use_one_hot_embeddings=self.use_one_hot_embeddings)
-                self.embedded_layer = bert_model.get_pooled_output()
+        with tf.name_scope('bert'):
+            bert_model = modeling.BertModel(
+                config=self.bert_config,
+                is_training=self.is_training,
+                input_ids=self.input_ids,
+                input_mask=self.input_mask,
+                token_type_ids=self.segment_ids,
+                use_one_hot_embeddings=self.use_one_hot_embeddings)
+            self.embedded_layer = bert_model.get_pooled_output()
 
     def create_model(self):
         with tf.name_scope("classification_rnn"):
