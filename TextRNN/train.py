@@ -9,6 +9,8 @@
 import os, json, numpy
 from model import Moldel_Class
 import tensorflow as tf
+from sklearn.metrics import f1_score
+
 
 # 设置GPU
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
@@ -17,20 +19,22 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 class ModelTrainner:
     def __init__(self, is_training=True):
         self.class_graph = tf.Graph()
-        self.model_dir = "text"
-        self.batch_size = 32
+        self.model_dir = "../model/text"
+        self.batch_size = 128
         self.is_training = is_training
         if self.is_training == True:
             self.keep_prob = 0.5
         else:
             self.keep_prob = 1.0
         with tf.variable_scope('classification_query'):
-            self.model = Moldel_Class(vocab_file="vocab.json",
+            self.model = Moldel_Class(vocab_file="../data/dictionary.json",
                                       keep_prob=self.keep_prob, is_training=self.is_training)
         self.saver = tf.train.Saver()
 
     def train(self, epochs=20):
-        xitems, yitems = self.load_samples_test(datafiles='test.txt')
+        xitems, yitems = self.load_samples_test(datafiles='../data/train.json')
+        xitems_test, yitems_test = self.load_samples_test(datafiles='../data/dev.json')
+        batch_count_test = int(len(xitems_test) / self.batch_size)
         batch_count = int(len(xitems) / self.batch_size)
         initer = tf.global_variables_initializer()
         with tf.Session() as session:
@@ -53,6 +57,17 @@ class ModelTrainner:
                     batch_buffer = "Progress {0}/{1} , cost : {2}".format(i + 1, batch_count, batch_loss_value)
                     if i % 20 == 0:
                         print(batch_buffer)
+
+                for i in range(batch_count_test):
+                    batch_xitems = xitems_test[i * self.batch_size:(i + 1) * self.batch_size]
+                    batch_yitems = yitems_test[i * self.batch_size:(i + 1) * self.batch_size]
+                    batch_char_inputs, batch_ys = self.convert_batch(batch_xitems, batch_yitems)
+                    feed_dict = {self.model.char_inputs: batch_char_inputs, self.model.outputs: batch_ys}
+                    batch_loss_value, acc, _, logits = session.run(
+                        [self.model.cost_func, self.model.accuracy, self.model.optimizer, self.model.logits], feed_dict)
+                    # if i % 20 == 0:
+                print('acc = ', acc)
+
                 print("Epoch: %d/%d , train cost=%f " % ((epoch + 1), epochs, train_loss_value))
                 self.saver.save(session, os.path.join(self.model_dir, "textclassification.dat"))
 
@@ -61,8 +76,9 @@ class ModelTrainner:
         with open(datafile, "r+", encoding="utf-8") as reader:
             for line in reader:
                 record = json.loads(line.strip().lower())
-                classid = record['id']
-                raw_text = record['text']
+                # print(record)
+                classid = int(record['label'])
+                raw_text = record['sentence']
                 if classid in row_mapper.keys():
                     row_mapper[classid].append(raw_text.strip().lower())
                 else:
@@ -146,4 +162,4 @@ class ModelTrainner:
 
 if __name__ == "__main__":
     trainner = ModelTrainner(is_training=True)
-    trainner.train()
+    trainner.train(40)

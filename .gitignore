@@ -113,3 +113,4 @@ script/*/*.csv
 launch.json
 settings.json
 .vscode/
+model

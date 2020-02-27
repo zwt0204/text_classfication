@@ -15,11 +15,11 @@ import logging
 
 class ModelPredicter:
     def __init__(self):
-        self.model_dir = 'text'
+        self.model_dir = '../model/text'
         self.graph = tf.Graph()
         self.keep_prob = 1.0
         self.is_training = False
-        self.vocab_file = 'vocab.json'
+        self.vocab_file = '../data/dictionary.json'
         with self.graph.as_default():
             with tf.variable_scope('classification_query'):
                 self.model = Moldel_Class(self.vocab_file, keep_prob=self.keep_prob, is_training=self.is_training)
@@ -50,7 +50,7 @@ class ModelPredicter:
         logging.debug("class predict time : %f" % ((t2 - t1).microseconds / 1000.))
         idx = np.argmax(values[0])
         classname = self.model.classnames[idx]
-        logging.info(
+        print(
             "input: {0} , predict classname {1} , classid {2} , probability {3}".format(input_text, classname, idx,
                                                                                         values[0][idx]))
         return idx, classname, values[0][idx], max(values[0])
@@ -69,4 +69,4 @@ class ModelPredicter:
 
 if __name__ == '__main__':
     model_predict = ModelPredicter()
-    model_predict.predict('data')
+    model_predict.predict('江疏影甜甜圈自拍，迷之角度竟这么好看，美吸引一切事物')

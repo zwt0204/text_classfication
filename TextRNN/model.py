@@ -17,8 +17,16 @@ from tensorflow.contrib.layers import xavier_initializer
 class Moldel_Class:
     def __init__(self, vocab_file, keep_prob=0.5, is_training=True):
         self.is_training = is_training
-        self.nclassnames = {"肯定": 1, "否定": 0}
-        self.classnames = {1: "肯定", 0: "否定"}
+        # self.nclassnames = {"肯定": 1, "否定": 0}
+        self.nclassnames = {"news_story": 0, "news_culture": 1, "news_entertainment": 2, "news_sports": 3,
+                            "news_finance": 4, "news_house": 5, "news_car": 6, "news_edu": 7, "news_tech": 8,
+                            "news_military": 9, "news_travel": 10, "news_world": 11, "news_stock": 12,
+                            "news_agriculture": 13, "news_game": 14}
+        self.classnames = {0: "news_story", 1: "news_culture", 2: "news_entertainment", 3: "news_sports",
+                            4: "news_finance", 5: "news_house", 6: "news_car", 7: "news_edu", 8: "news_tech",
+                            9: "news_military", 10: "news_travel", 11: "news_world", 12: "news_stock",
+                            13: "news_agriculture", 14: "news_game"}
+        # self.classnames = {1: "肯定", 0: "否定"}
         self.num_classes = len(self.classnames)
         self.sequence_length = 70
         self.hidden_size = 256
@@ -26,8 +34,8 @@ class Moldel_Class:
         self.keep_prob = keep_prob
         self.learning_rate = 0.0005
         self.layer_size = 1
-        self.attention_size = 100
-        self.warmup_steps = 1000
+        self.attention_size = 1
+        self.warmup_steps = 10
         self.clip = 5
         self.vocab_file = vocab_file
         self.char_index = {' ': 0}
@@ -70,17 +78,17 @@ class Moldel_Class:
                 inputs=self.embedded_layer,
                 dtype=tf.float32)
 
-        # attention
-        with tf.name_scope('Attention_layer'):
-            attention_output, _, _ = attention(outputs, self.attention_size, return_alphas=True)
-
-        self.drop = tf.nn.dropout(attention_output, self.keep_prob)
+        # attention 0.94
+        # with tf.name_scope('Attention_layer'):
+        #     attention_output, _, _ = attention(outputs, self.attention_size, return_alphas=True)
+        #
+        # self.drop = tf.nn.dropout(attention_output, self.keep_prob)
         #############################
 
         # 没有attention
-        # outputs = tf.concat(outputs, axis=-1)
-        # outputs = tf.reduce_mean(outputs, axis=1)
-        # self.drop = tf.nn.dropout(outputs, self.keep_prob)
+        outputs = tf.concat(outputs, axis=-1)
+        outputs = tf.reduce_mean(outputs, axis=1)
+        self.drop = tf.nn.dropout(outputs, self.keep_prob)
         ##############################
 
         self.logits = tf.matmul(self.drop, self.weight_variable) + self.bias_variable  # [batch_size,num_classes]
