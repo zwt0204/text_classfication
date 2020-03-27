@@ -8,7 +8,7 @@
 """
 import json
 import tensorflow as tf
-from attention import attention
+# from attention import attention
 from tensorflow.contrib.rnn import GRUCell, LSTMCell, MultiRNNCell
 from tensorflow.python.ops.rnn import bidirectional_dynamic_rnn as bi_rnn
 from tensorflow.contrib.layers import xavier_initializer
@@ -100,13 +100,13 @@ class Moldel_Class:
             # self.cost_func = tf.reduce_mean(
             #     tf.nn.sigmoid_cross_entropy_with_logits(labels=self.outputs, logits=self.logits))
             # 类别独立且排斥，一句话只能属于一个类别
-
             # self.outputs = self.label_smoothing(self.outputs)
             self.cost_func = tf.reduce_mean(
                 tf.nn.softmax_cross_entropy_with_logits(labels=self.outputs, logits=self.logits))
             self.accuracy = tf.reduce_mean(
                 tf.cast(tf.equal(tf.round(self.prediction), tf.round(self.outputs)), tf.float32), name="Accuracy")
 
+            # 全局步数
             global_step = tf.train.get_or_create_global_step()
             lr = self.noam_scheme(self.learning_rate, global_step, self.warmup_steps)
 
@@ -149,5 +149,6 @@ class Moldel_Class:
         :param epsilon:
         :return:
         """
+        # K表示类别数目
         K = inputs.get_shape().as_list()[-1]
         return ((1 - epsilon) * inputs) + (epsilon / K)
