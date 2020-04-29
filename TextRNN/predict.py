@@ -11,6 +11,8 @@ import numpy as np
 from model import Moldel_Class
 import tensorflow as tf
 import logging
+import json
+from sklearn.metrics import precision_score
 
 
 class ModelPredicter:
@@ -42,6 +44,22 @@ class ModelPredicter:
         :param input_text:
         :return:
         """
+
+        x_test = []
+        y_test = []
+        with open('../data/dev.json', 'r', encoding='utf8') as f:
+            for line in f.readlines():
+                data = json.loads(line)
+                temp = self.convert_vector(data['sentence'].strip(), self.model.sequence_length)
+                y_test.append(int(data['label']))
+                x_test.append(temp)
+
+        x_test = np.array(x_test).reshape((10000, 70))
+        feed_dict = {self.model.char_inputs: x_test}
+        values = self.session.run(self.model.prediction, feed_dict)
+
+        precision_score(y_test, [np.argmax(i) for i in values], average='micro')
+
         char_vector = self.convert_vector(input_text, self.model.sequence_length)
         t1 = datetime.now()
         feed_dict = {self.model.char_inputs: char_vector}

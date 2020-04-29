@@ -49,12 +49,13 @@ class ModelTrainner:
                     batch_xitems = xitems[i * self.batch_size:(i + 1) * self.batch_size]
                     batch_yitems = yitems[i * self.batch_size:(i + 1) * self.batch_size]
                     batch_char_inputs, batch_ys = self.convert_batch(batch_xitems, batch_yitems)
+                    print(batch_char_inputs.shape)
                     feed_dict = {self.model.char_inputs: batch_char_inputs, self.model.outputs: batch_ys}
                     batch_loss_value, acc, _ = session.run([self.model.cost_func, self.model.accuracy, self.model.optimizer], feed_dict)
                     train_loss_value += batch_loss_value / batch_count
                     train_accuracy_value += acc / batch_count
 
-                    batch_buffer = "Progress {0}/{1} , cost : {2}".format(i + 1, batch_count, batch_loss_value)
+                    batch_buffer = "Progress {0}/{1} , cost : {2}, train_accuracy_value{3}".format(i + 1, batch_count, batch_loss_value, train_accuracy_value)
                     if i % 20 == 0:
                         print(batch_buffer)
 
@@ -162,4 +163,4 @@ class ModelTrainner:
 
 if __name__ == "__main__":
     trainner = ModelTrainner(is_training=True)
-    trainner.train(40)
+    trainner.train(10)
