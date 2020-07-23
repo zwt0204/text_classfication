@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c8060b9-26b5-4630-9b88-d3d496b36f68" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/text_classfication.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/text_classfication.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextRNN/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRNN/predict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextRNN/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRNN/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextRNN/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextRNN/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,41 +19,14 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>average_gradients</find>
-      <find>reuse_variables</find>
-      <find>numpy</find>
-      <find>load_sentences</find>
-      <find>prepare_dataset</find>
-      <find>get_train_examples</find>
-      <find>optimistic_restore</find>
-      <find>save</find>
-      <find>vocab_file</find>
-      <find>self.keep_prob</find>
-      <find>tokenizer</find>
-      <find>class_graph</find>
-      <find>116</find>
-      <find>'sentence': '因痛失比赛而落泪的职业选手 让人感到心疼', 'keywords': 'faker,skt,大魔王,职业选手,小组赛'}</find>
-      <find>成吉思汗时代的蒙古骑兵天下无敌的原因</find>
-      <find>&quot;102&quot;</find>
-      <find>&quot;101&quot;</find>
-      <find>&quot;116&quot;</find>
-      <find>XGBOOST</find>
-      <find>global_step</find>
-      <find>label_smoothing</find>
-      <find>MOVING_AVERAGE_DECAY</find>
-      <find>precision_score</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>np</replace>
-      <replace>14</replace>
-      <replace>&quot;2&quot;</replace>
-      <replace>&quot;14&quot;</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2552" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectId" id="1bA6fKy44jQcptM595bDFHKkWyr" />
   <component name="ProjectViewState">
@@ -61,6 +34,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -189,25 +164,29 @@
     </history-entry>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1960" height="214" key="GridCell.Tab.0.bottom" timestamp="1588152967073">
+    <state x="1209" y="419" key="FileChooserDialogImpl" timestamp="1588844628776">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1209" y="419" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588844628776" />
+    <state width="2516" height="744" key="GridCell.Tab.0.bottom" timestamp="1588153874425">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1960" height="214" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588152868221" />
-    <state width="1960" height="214" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588152967073" />
-    <state width="1960" height="214" key="GridCell.Tab.0.center" timestamp="1588152967073">
+    <state width="2516" height="744" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588153874425" />
+    <state width="2516" height="744" key="GridCell.Tab.0.center" timestamp="1588153874425">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1960" height="214" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588152868220" />
-    <state width="1960" height="214" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588152967073" />
-    <state width="1960" height="214" key="GridCell.Tab.0.left" timestamp="1588152967073">
+    <state width="2516" height="744" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588153874425" />
+    <state width="2516" height="744" key="GridCell.Tab.0.left" timestamp="1588153874425">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1960" height="214" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588152868219" />
-    <state width="1960" height="214" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588152967073" />
-    <state width="1960" height="214" key="GridCell.Tab.0.right" timestamp="1588152967073">
+    <state width="2516" height="744" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588153874425" />
+    <state width="2516" height="744" key="GridCell.Tab.0.right" timestamp="1588153874425">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1960" height="214" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588152868221" />
-    <state width="1960" height="214" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588152967073" />
+    <state width="2516" height="744" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588153874425" />
   </component>
 </project>

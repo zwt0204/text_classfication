@@ -7,7 +7,7 @@
 @Software: PyCharm
 """
 import tensorflow as tf
-from al_bert import modeling
+from BERT_TextCNN.al_bert import modeling
 
 
 class TextConfig:

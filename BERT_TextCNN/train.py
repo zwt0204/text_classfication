@@ -9,8 +9,8 @@
 import sys
 import time
 from sklearn import metrics
-from model import *
-from data_process import *
+from BERT_TextCNN.model import *
+from BERT_TextCNN.data_process import *
 
 
 def evaluate(sess, dev_data):

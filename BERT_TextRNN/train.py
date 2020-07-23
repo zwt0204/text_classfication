@@ -9,7 +9,7 @@
 import sys
 import time
 from sklearn import metrics
-from model import Moldel_Class
+from BERT_TextRNN.model import Moldel_Class
 from BERT_TextCNN.data_process import *
 
 
