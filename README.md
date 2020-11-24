@@ -1,5 +1,14 @@
 # text_classfication文本分类
-
+包含二分类、多分类以及多标签分类
+单标签与多标签的区别在于损失函数的计算，以及全连接层的输出：
+损失函数：
+多标签：tf.nn.sigmoid_cross_entropy_with_logits(labels=self.input_y, logits=self.scores)
+单标签：tf.nn.softmax_cross_entropy_with_logits(labels=self.input_y, logits=self.scores)
+全连接层：
+多标签：self.probabilities = tf.nn.sigmoid(self.scores)
+                self.predictions = tf.round(self.probabilities, name="predictions")
+单标签：self.pro = tf.nn.softmax(self.scores)
+                self.predicitions = tf.argmax(self.pro, 1, name='predictions')
 ## TextRNN and TextRNN+attention
 - data:{"text":"data", "id":1}
 

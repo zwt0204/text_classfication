@@ -1,11 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6c8060b9-26b5-4630-9b88-d3d496b36f68" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/单标签分类/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/多标签分类/TextCNN/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/多标签分类/TextCNN/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/多标签分类/TextCNN/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/多标签分类/TextCNN/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/多标签分类/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/text_classfication.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/text_classfication.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextCNN/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT_TextRNN/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_TextRNN/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/al_bert/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/al_bert/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/al_bert/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/al_bert/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/al_bert/bert_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/al_bert/bert_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/al_bert/create_pretrain_data.sh" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/al_bert/create_pretrain_data.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/al_bert/create_pretraining_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/al_bert/create_pretraining_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/al_bert/modeling.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/al_bert/modeling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/al_bert/optimization.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/al_bert/optimization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/al_bert/optimization_finetuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/al_bert/optimization_finetuning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/al_bert/python3" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/al_bert/python3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/al_bert/run_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/al_bert/run_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/al_bert/run_pretraining.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/al_bert/run_pretraining.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/al_bert/test_changes.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/al_bert/test_changes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/al_bert/tokenization.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/al_bert/tokenization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/data_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/data_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextCNN/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextCNN/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextRNN/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextRNN/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_TextRNN/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/BERT_TextRNN/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomForst/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/RandomForst/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomForst/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/RandomForst/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SVM/svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/SVM/svm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextCNN/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/TextCNN/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextCNN/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/TextCNN/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextCNN/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/TextCNN/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextRCNN/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/TextRCNN/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextRCNN/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/TextRCNN/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextRCNN/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/TextRCNN/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextRNN/attention.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/TextRNN/attention.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextRNN/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/TextRNN/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextRNN/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/TextRNN/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextRNN/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/TextRNN/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TransformerXL/XL.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/TransformerXL/XL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TransformerXL/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/TransformerXL/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TransformerXL/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/TransformerXL/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TransformerXL/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/TransformerXL/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XGBOOST/xgboost_.py" beforeDir="false" afterPath="$PROJECT_DIR$/单标签分类/XGBOOST/xgboost_.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,12 +81,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2552" />
-    <option name="y" value="-8" />
-    <option name="width" value="2576" />
-    <option name="height" value="1416" />
-  </component>
+  <component name="JupyterTrust" id="ceaff8d4-8da8-4c0d-b6a1-2ea8b5499a1e" />
   <component name="ProjectId" id="1bA6fKy44jQcptM595bDFHKkWyr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,10 +91,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\张伟涛\Desktop\笔记\text_classfication\单标签分类" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\mygit\text_classfication\data" />
       <recent name="D:\mygit\text_classfication\BERT" />
@@ -60,6 +118,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RandomForst/model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -81,6 +140,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TextRNN/predict.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -102,6 +162,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TextRNN/train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -116,14 +177,15 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RandomForst" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/单标签分类/RandomForst" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/RandomForst/model.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/单标签分类/RandomForst/model.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -142,6 +204,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -152,6 +215,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576721581880</updated>
+      <workItem from="1606203733313" duration="250000" />
     </task>
     <servers />
   </component>
@@ -162,6 +226,20 @@
     <history-entry file="pytest_in_model_py - 2020.03.13 at 18h 24m 45s.xml">
       <configuration name="pytest in model.py" configurationId="tests" />
     </history-entry>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="1209" y="419" key="FileChooserDialogImpl" timestamp="1588844628776">
